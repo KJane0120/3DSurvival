@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour
     public void OnLook(InputAction.CallbackContext context)
     {
         mouseDelta = context.ReadValue<Vector2>();
+
     }
 
     public void OnJump(InputAction.CallbackContext context)

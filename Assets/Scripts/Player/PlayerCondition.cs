@@ -1,9 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//public interface IDamageable
-public class PlayerCondition : MonoBehaviour
+public interface IDamageable
+{
+    void TakePhysicalDamage(int damage);
+}
+
+public class PlayerCondition : MonoBehaviour, IDamageable
 {
     public UICondition uiCondition;
     Condition health { get { return uiCondition.health; } }
@@ -11,6 +16,8 @@ public class PlayerCondition : MonoBehaviour
     Condition stamina { get { return uiCondition.stamina; } }
 
     public float noHungerHealthDecay;
+
+    public event Action onTakeDamage;
 
     void Update()
     {
@@ -41,5 +48,11 @@ public class PlayerCondition : MonoBehaviour
     public void Die()
     {
         Debug.Log("죽었다!");
+    }
+
+    public void TakePhysicalDamage(int damage)
+    {
+        health.Subtract(damage);
+        onTakeDamage?.Invoke(); //등록된 기능을 호출만
     }
 }
