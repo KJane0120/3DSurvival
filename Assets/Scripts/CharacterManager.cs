@@ -14,12 +14,12 @@ public class CharacterManager : MonoBehaviour
             return _instance;
         }
     }
-    public Player _player;
     public Player Player
     {
         get { return _player; }
         set { _player = value; }
     }
+    public Player _player;
 
     private void Awake()
     {

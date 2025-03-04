@@ -15,13 +15,13 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Look",
-                    "type": "Value",
-                    "id": "07644e0b-a649-4a1f-9db7-d0aabe8fc517",
-                    "expectedControlType": "Delta",
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "56259b2c-1293-477a-b41a-1de5ee24a772",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Jump",
@@ -51,13 +51,13 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Attack",
-                    "type": "Button",
-                    "id": "56259b2c-1293-477a-b41a-1de5ee24a772",
-                    "expectedControlType": "Button",
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "07644e0b-a649-4a1f-9db7-d0aabe8fc517",
+                    "expectedControlType": "Delta",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -118,17 +118,6 @@
                 },
                 {
                     "name": "",
-                    "id": "5a3de6cb-0607-49de-b901-255fd7e96fc4",
-                    "path": "<Mouse>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "307654ec-7511-4937-a4ba-82b1c41d1d67",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -157,6 +146,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interaction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5a3de6cb-0607-49de-b901-255fd7e96fc4",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
