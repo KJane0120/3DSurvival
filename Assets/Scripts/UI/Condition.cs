@@ -12,7 +12,6 @@ public class Condition : MonoBehaviour
     void Start()
     {
         curValue = startValue;
-
     }
 
     // Update is called once per frame
@@ -24,5 +23,15 @@ public class Condition : MonoBehaviour
     float GetPercentage()
     {
         return curValue / maxValue;
+    }
+
+    public void Add(float value)
+    {
+        curValue = Mathf.Min(curValue + value, maxValue);
+    }
+
+    public void Subtract(float value)
+    {
+        curValue = Mathf.Max(curValue - value, 0);
     }
 }
