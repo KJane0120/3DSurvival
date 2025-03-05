@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8244103770701716984}
   - component: {fileID: 7493821902822068311}
   - component: {fileID: 4186329449942188882}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Item_Wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,12 +107,12 @@ GameObject:
   - component: {fileID: 963420587812148737}
   - component: {fileID: 6370183944029152271}
   - component: {fileID: 1939908246637107783}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Log
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 126
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &963420587812148737
 Transform:
